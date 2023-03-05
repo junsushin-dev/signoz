@@ -38,6 +38,7 @@ receivers:
         endpoint: 0.0.0.0:4318
         cors:
           allowed_origins: "*"
+          allowed_headers: "*"
   jaeger:
     protocols:
       grpc:
