@@ -37,7 +37,8 @@ receivers:
       http:
         endpoint: 0.0.0.0:4318
         cors:
-          allowed_origins: "*"
+          allowed_origins:
+            - http://localhost:5173
           allowed_headers: "*"
   jaeger:
     protocols:
