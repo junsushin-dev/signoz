@@ -100,7 +100,7 @@ services:
       - ./custom-function.xml:/etc/clickhouse-server/custom-function.xml
       - ./clickhouse-cluster.xml:/etc/clickhouse-server/config.d/cluster.xml
       # - ./clickhouse-storage.xml:/etc/clickhouse-server/config.d/storage.xml
-      - ./data/clickhouse/:/var/lib/clickhouse/
+      - /data/clickhouse/:/var/lib/clickhouse/
       - ./user_scripts:/var/lib/clickhouse/user_scripts/
 
   # clickhouse-2:
