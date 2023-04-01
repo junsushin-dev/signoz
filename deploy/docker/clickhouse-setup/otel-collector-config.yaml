@@ -36,6 +36,10 @@ receivers:
         endpoint: 0.0.0.0:4317
       http:
         endpoint: 0.0.0.0:4318
+        cors:
+          allowed_origins:
+            - http://localhost:5173
+          allowed_headers: "*"
   jaeger:
     protocols:
       grpc:
